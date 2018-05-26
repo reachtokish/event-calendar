@@ -1,0 +1,25 @@
+// history tab css
+.history_list {
+    li {
+        font-family: Arial;
+        background-color: #F8F8F8;
+        margin-bottom: 10px;
+        padding: 15px 20px;
+        border-radius: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 15px;
+            color: #6F6F6F;
+        }
+        p {
+            font-size: 13px;
+            color: #959595;
+            span {
+                color: #000000;
+            }
+        }
+    }
+}
+// history tab css

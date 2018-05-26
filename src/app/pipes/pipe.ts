@@ -1,0 +1,17 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+    name: 'FilterPipe',
+})
+
+export class FilterPipe implements PipeTransform {
+    transform(value: any, input: string, key: string) {
+        if (input) {
+            input = input.toLowerCase();
+            return value.filter(function (el: any) {
+                return el[key].toLowerCase().indexOf(input) > -1;
+            })
+        }
+        return value;
+    }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11277 7323 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #afafaf;
+      }
+
+      .cls-2 {
+        fill: #afafaf;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="meeting_ico" transform="translate(9952 6967)">
+    <g id="Ellipse_177" data-name="Ellipse 177" class="cls-1" transform="translate(1325 356)">
+      <circle class="cls-3" cx="19" cy="19" r="19"/>
+      <circle class="cls-4" cx="19" cy="19" r="18.5"/>
+    </g>
+    <g id="flaticon1517546527-svg" transform="translate(1333.36 364.36)">
+      <path id="Path_17632" data-name="Path 17632" class="cls-2" d="M94.566,8.317a4.152,4.152,0,1,0-4.152-4.152A4.156,4.156,0,0,0,94.566,8.317Zm-2.008-4.6a.628.628,0,0,1,.887,0l.6.6,1.643-1.643a.627.627,0,1,1,.887.887L94.488,5.652a.627.627,0,0,1-.887,0L92.557,4.609A.627.627,0,0,1,92.557,3.722Z" transform="translate(-83.952 -0.014)"/>
+      <path id="Path_17633" data-name="Path 17633" class="cls-2" d="M2.442,21.421A2.442,2.442,0,1,0,0,18.979,2.445,2.445,0,0,0,2.442,21.421Z" transform="translate(0 -15.356)"/>
+      <path id="Path_17634" data-name="Path 17634" class="cls-2" d="M3.367,105.18v5.071a2.109,2.109,0,0,0,2.109,2.109H8.225v3.746a.517.517,0,0,0,.517.517h2.436a.517.517,0,0,0,.517-.517v-5.4a1.78,1.78,0,0,0-1.78-1.78H7.77V105.18a2.2,2.2,0,0,0-4.4,0Z" transform="translate(-3.126 -95.62)"/>
+      <path id="Path_17635" data-name="Path 17635" class="cls-2" d="M231.111,21.421a2.442,2.442,0,1,0-2.442-2.442A2.445,2.445,0,0,0,231.111,21.421Z" transform="translate(-212.325 -15.356)"/>
+      <path id="Path_17636" data-name="Path 17636" class="cls-2" d="M181.057,105.18v3.743h-2.144a1.78,1.78,0,0,0-1.78,1.78v5.4a.517.517,0,0,0,.517.517h2.436a.517.517,0,0,0,.517-.517v-3.746h2.749a2.109,2.109,0,0,0,2.109-2.109V105.18a2.2,2.2,0,0,0-4.4,0Z" transform="translate(-164.473 -95.62)"/>
+      <path id="Path_17637" data-name="Path 17637" class="cls-2" d="M96.541,135.514a.627.627,0,1,0,0-1.255H89.234a.627.627,0,0,0,0,1.255H92.26v9.749a.627.627,0,1,0,1.255,0v-9.749Z" transform="translate(-82.274 -124.664)"/>
+    </g>
+  </g>
+</svg>

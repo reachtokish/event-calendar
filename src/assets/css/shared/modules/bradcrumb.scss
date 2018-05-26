@@ -1,0 +1,24 @@
+.breadcrumb {
+    padding: 20px 0;
+    background-color: transparent;
+    margin: 0;
+    li {
+        font-size: 18px;
+        font-family: 'rhlight';
+        color: #848484;
+        a {
+            color: #848484;
+            &:hover {
+                color: #000;
+            }
+        }
+        &.active {
+            color: #000;
+        }
+    }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    color: #848484;
+}

@@ -1,0 +1,9 @@
+.modal-dialog {
+    &.meta_modal {
+        width: 620px;
+    }
+    &.import_contact_modal {
+        width: 1000px;
+        max-width: 1000px;
+    }
+}

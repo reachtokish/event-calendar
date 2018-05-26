@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-9454 -4207 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.7;
+      }
+
+      .cls-2 {
+        fill: #fcaf17;
+      }
+    </style>
+  </defs>
+  <g id="underconstruction_ico" transform="translate(-10197 -4617)">
+    <circle id="Ellipse_187" data-name="Ellipse 187" class="cls-1" cx="25" cy="25" r="25" transform="translate(743 410)"/>
+    <path id="Path_17768" data-name="Path 17768" class="cls-2" d="M194.966,103.613a1.039,1.039,0,0,0-1.036,1.036v2.513h-.656a4.749,4.749,0,1,0,0,9.5h3.385a2.677,2.677,0,1,1,0,5.353h-6.087a1.036,1.036,0,0,0,0,2.072h3.359v2.547a1.036,1.036,0,1,0,2.072,0v-2.547h.717a4.749,4.749,0,0,0-.06-9.5h-3.385a2.677,2.677,0,1,1,0-5.353h5.975a1.036,1.036,0,1,0,0-2.072H196v-2.513A1.034,1.034,0,0,0,194.966,103.613Z" transform="translate(573.475 319.387)"/>
+  </g>
+</svg>

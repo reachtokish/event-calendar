@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11277 7180 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #afafaf;
+      }
+
+      .cls-2 {
+        fill: #afafaf;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="sitevisit_ico" transform="translate(9952 6824)">
+    <g id="Ellipse_177" data-name="Ellipse 177" class="cls-1" transform="translate(1325 356)">
+      <circle class="cls-3" cx="19" cy="19" r="19"/>
+      <circle class="cls-4" cx="19" cy="19" r="18.5"/>
+    </g>
+    <g id="flaticon1517547434-svg" transform="translate(1332.169 364.169)">
+      <g id="Group_40816" data-name="Group 40816" transform="translate(1.024)">
+        <path id="Path_17644" data-name="Path 17644" class="cls-2" d="M18.76,16.03V9.493l1.562,1.346.937-1.081L17.486,6.465V.721A.745.745,0,0,0,16.765,0H14.074a.745.745,0,0,0-.721.721V2.836L11.719,1.394a.721.721,0,0,0-.961,0L1.024,9.757l.937,1.081L3.523,9.517v7.5a9.608,9.608,0,0,0-1.154.192l.312,1.418a10.358,10.358,0,0,1,2.451-.288,10.5,10.5,0,0,1,3.965.769,4.9,4.9,0,0,0-1.081,1.682l1.346.5c.817-2.187,4.566-3.821,8.772-3.821a15.669,15.669,0,0,1,3.725.433l.36-1.394A17.928,17.928,0,0,0,18.76,16.03Zm-4.038-1.37H7.585V9.3h7.138Z" transform="translate(-1.024)"/>
+      </g>
+    </g>
+  </g>
+</svg>

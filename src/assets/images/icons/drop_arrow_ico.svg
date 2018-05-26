@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4923 496 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <g id="drop_arrow_ico" transform="translate(4923.592 511.439)">
+    <path id="Path_65" data-name="Path 65" class="cls-1" d="M12.728,11.137V.8a.8.8,0,1,0-1.591,0V11.137H.8a.8.8,0,0,0,0,1.591H11.932a1.112,1.112,0,0,0,.583-.212.8.8,0,0,0,.212-.583Z" transform="translate(8.408 -15.439) rotate(45)"/>
+  </g>
+</svg>

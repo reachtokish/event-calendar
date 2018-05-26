@@ -1,0 +1,199 @@
+<div class="row pt-30px">
+    <div class="col-md-12">
+        <form [formGroup]="organisationCreateContactForm" (submit)="createOrganisation(organisationCreateContactForm)" #organisationForm="ngForm">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card site_box_shadow p-0px no_shadow">
+                        <h3 class="card_title">Organisation Info</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 form_spacing">
+                                        <mat-form-field class="full-width">
+                                            <input [errorStateMatcher]="matcher" type="text" matInput placeholder="Company Name" formControlName="companyName" required />
+                                            <mat-error *ngIf="organisationCreateContactForm.get('companyName').hasError('required')">This field is required</mat-error>
+                                            <mat-error *ngIf="organisationCreateContactForm.get('companyName').hasError('pattern')">Company name should be max 30 characters</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-12 form_spacing">
+                                        <mat-form-field>
+                                            <mat-select [errorStateMatcher]="matcher" placeholder="Company Type" formControlName="companyType" required>
+                                                <mat-option value="Corporate">Corporate</mat-option>
+                                                <mat-option value="Trust">Trust</mat-option>
+                                                <mat-option value="Government">Government</mat-option>
+                                                <mat-option value="Others">Others</mat-option>
+                                            </mat-select>
+                                            <mat-error *ngIf="organisationCreateContactForm.get('companyType').hasError('required')">This field is required</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-12 form_spacing">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <multi-value #landlines [update]="false" [firstKey]="'landLineNo'" [secondKey]="'isPrimaryLandLine'" [type]="'landline'" [max]="4"></multi-value>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <mat-form-field class="full-width">
+                                                    <input [errorStateMatcher]="matcher" matInput placeholder="Fax" formControlName="fax" />
+                                                    <mat-error *ngIf="organisationCreateContactForm.get('fax').hasError('pattern')">Invalid fax number</mat-error>
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 form_spacing">
+                                        <mat-form-field class="full-width">
+                                            <input [errorStateMatcher]="matcher" matInput placeholder="GST" formControlName="gst" />
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-12 form_spacing">
+                                        <mat-form-field class="full-width">
+                                            <input [errorStateMatcher]="matcher" matInput placeholder="Website" formControlName="website" />
+                                            <mat-error *ngIf="organisationCreateContactForm.get('website').hasError('pattern')">Invalid website name</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div
+                                            appInputExpand
+                                            firstElement="organization"
+                                            lastElement="orgPincode"
+                                            firstNextElment="orgBuilding"
+                                            otherField="organization_other_addresses"
+                                            (collapsed)="joinUpdateVal($event, this.organisationCreateContactForm, 'address', this.organisationCreateContactForm.controls.otherAddress)"
+                                            id="org_address_anm"
+                                            class="address_expand" >
+                                            <div class="adress_textarea require">
+                                                <mat-form-field>
+                                                    <textarea [errorStateMatcher]="matcher" id="organization" matInput placeholder="Address" formControlName="address">
+                                                    </textarea>
+                                                    <mat-error *ngIf="organisationCreateContactForm.get('address').hasError('required')">This field is required</mat-error>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="other_addresses" id="organization_other_addresses" formGroupName="otherAddress">
+                                                <label for="">Address</label>
+                                                <div class="anm_top row" style="transition-delay: 0.05s;">
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <input [errorStateMatcher]="matcher" matInput placeholder="Building Name" formControlName="building" id="orgBuilding" required />
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('building').hasError('required')">This field is required</mat-error>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('building').hasError('pattern')">Invalid building name. Max length 25 characters. Should take a-zA-Z0-9#,.-</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <input [errorStateMatcher]="matcher" matInput placeholder="Street Address" formControlName="streetAddress" required />
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('streetAddress').hasError('required')">This field is required</mat-error>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('streetAddress').hasError('pattern')">Invalid street address. Max length 40 characters. Should take a-zA-Z0-9#,.-</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="anm_top row" style="transition-delay: 0.10s;">
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <mat-select
+                                                                [errorStateMatcher]="matcher"
+                                                                placeholder="Country"
+                                                                formControlName="country"
+                                                                #organisationCountry
+                                                                (change)="populateState(organisationCountry, 'organisationState', 'organisationCity', 'organisationLocation', 'organisationLocationId', 'organisationCreateContactForm', 'otherAddress', 'state', 'city', 'location')"
+                                                                required>
+                                                                <mat-option value="">Select Country</mat-option>
+                                                                <mat-option value="India">India</mat-option>
+                                                            </mat-select>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('country').hasError('required')">This field is required</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <mat-select
+                                                                [errorStateMatcher]="matcher"
+                                                                placeholder="State"
+                                                                formControlName="state"
+                                                                #organisationStateInput
+                                                                (change)="populateCity(organisationStateInput, 'organisationCity', 'organisationLocation', 'organisationLocationId', 'organisationCreateContactForm', 'otherAddress', 'city', 'location')"
+                                                                required>
+                                                                <mat-option value="">Select State</mat-option>
+                                                                <mat-option *ngFor="let i of organisationState" value="{{ i }}">{{ i }}</mat-option>
+                                                            </mat-select>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('state').hasError('required')">This field is required</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row anm_top" style="transition-delay: 0.15s;">
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <mat-select
+                                                                [errorStateMatcher]="matcher"
+                                                                placeholder="City"
+                                                                formControlName="city"
+                                                                #organisationCityInput
+                                                                (change)="populateLocation(organisationCityInput, 'organisationLocation', 'organisationLocationId', 'organisationCreateContactForm', 'otherAddress', 'location')"
+                                                                required>
+                                                                <mat-option value="">Select City</mat-option>
+                                                                <mat-option *ngFor="let i of organisationCity" value="{{ i }}">{{ i }}</mat-option>
+                                                            </mat-select>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('city').hasError('required')">This field is required</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <mat-form-field class="full-width">
+                                                            <mat-select
+                                                                [errorStateMatcher]="matcher"
+                                                                placeholder="Location"
+                                                                formControlName="location"
+                                                                #organisationLocationInput
+                                                                (change)="getLocationByName(organisationLocationInput, organisationCityInput, 'organisationLocationId')"
+                                                                required>
+                                                                <mat-option value="">Select Location</mat-option>
+                                                                <mat-option *ngFor="let i of organisationLocation" value="{{ i }}">{{ i }}</mat-option>
+                                                            </mat-select>
+                                                            <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('location').hasError('required')">This field is required</mat-error>
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="anm_top row" style="transition-delay: 0.2s;">
+                                                    <mat-form-field class="full-width col-md-6">
+                                                        <input [errorStateMatcher]="matcher" matInput placeholder="Pincode" type="text" formControlName="pincode" id="orgPincode" required />
+                                                        <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('pincode').hasError('required')">This field is required</mat-error>
+                                                        <mat-error *ngIf="organisationCreateContactForm.get('otherAddress').get('pincode').hasError('pattern')">Invalid pincode</mat-error>
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="site_btn orange_btn" [disabled]="loading == true">Create<img *ngIf="loading == true" class="loader" src="assets/images/loader.gif" /></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade small_modal failure_modal" bsModal #organisationExistModal="bs-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <button id="organisationContactExistHideBtn" type="button" class="modal_close_btn" (click)="organisationExistModal.hide()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="5001 500 16 16">
+                    <g id="close_ico" transform="translate(5001 500)">
+                        <g id="Group_51" data-name="Group 51" transform="translate(0 0)">
+                            <path id="Path_66" data-name="Path 66" class="cls-1" d="M9.517,7.517a.667.667,0,0,0,0,.966l6.276,6.276a.667.667,0,0,1,0,.966l-.069.069a.667.667,0,0,1-.966,0L8.483,9.517a.667.667,0,0,0-.966,0L1.241,15.793a.667.667,0,0,1-.966,0l-.069-.069a.667.667,0,0,1,0-.966L6.483,8.483a.667.667,0,0,0,0-.966L.207,1.241a.667.667,0,0,1,0-.966L.276.207a.667.667,0,0,1,.966,0L7.517,6.483a.667.667,0,0,0,.966,0L14.759.207a.667.667,0,0,1,.966,0l.069.069a.667.667,0,0,1,0,.966Z" transform="translate(0 0)"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="modal-body p-15px">
+                <p>Organization contact already exists in our Franchise record</p>
+                <div>
+                    <button class="btn orange-btn save_btn" type="button" (click)="organisationExistModal.hide();">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

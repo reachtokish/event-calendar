@@ -1,0 +1,188 @@
+@import './bootstrap/scss/bootstrap.scss';
+@import './shared/vars.scss';
+@import './shared/mixins.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import './shared/modules/card.scss';
+@import './shared/modules/note-card.scss';
+@import './shared/modules/material-customization.scss';
+@import './shared/modules/ngb-tab.scss';
+@import './shared/modules/address-anm.scss';
+@import './shared/modules/buttons.scss';
+@import './shared/modules/modals.scss';
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
+
+:focus {
+    outline: none !important;
+}
+.cdk-overlay-container {
+    z-index: 999999;
+}
+.modal {
+    .modal_close_btn {
+        background-color: #fff;
+        padding: 0;
+        width: 26px;
+        height: 26px;
+        border: solid 1px #BFBFBF;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: -13px;
+        right: -13px;
+        cursor: pointer;
+        z-index: 1;
+        svg {
+            width: 10px;
+            height: 10px;
+            display: block;
+            margin: 0 auto;
+            opacity: 0.6;
+            cursor: pointer;
+            pointer-events: none;
+            path {
+                fill: #000;
+                cursor: pointer;
+            }
+        }
+        &:hover {
+            svg {
+                opacity: 1;
+            }
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}
+.add_leads {
+    display: inline-block;
+    font-family: 'rhregular';
+    color: #FCAF17;
+    font-size: 15px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 7px;
+        position: relative;
+        top: -1px;
+        svg {
+            width: 15px;
+            height: 15px;
+            display: block;
+        }
+    }
+}
+
+.interaction_tab {
+    .mat-tab-header {
+        display: none;
+    }
+}
+// history tab css
+
+
+
+.content_elements .ui-state-highlight {
+    width: 30%;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    height: 100px;
+    margin: 0 1.6% 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: None;
+}
+.main_template .ui-state-highlight {
+    width: 100%;
+    height: 100px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+}
+
+
+// progress bar styling
+.ng-bar {
+    background-color: #fcaf17 !important;
+    .ng-meteor {
+        box-shadow: 0 0 10px #fcaf17, 0 0 5px #fcaf17 !important;
+    }
+}
+.ng-spinner {
+    .ng-spinner-icon {
+        border-top-color: #fcaf17 !important;
+        border-left-color: #fcaf17 !important;
+    }
+}
+// progress bar styling
+
+
+// remove spinner on input of number
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.require .mat-input-placeholder:after {
+    content: '*';
+    display: inline-block;
+    margin-left: 5px;
+    color: #f00;
+}
+.require .mat-focused .mat-input-placeholder:after {
+    content: '*';
+    color: #FCAF17;
+}
+.star {
+    span {
+        &:hover {
+            path {
+                fill: #FCAF17;
+            }
+        }
+    }
+}
+timepicker {
+    input {
+        pointer-events: none;
+    }
+}
+
+// snakbar
+.mat-snack-bar-container {
+    background: transparent;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+// snakbar
+
+.legend {
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        span {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-right: 5px;
+            background-color: #ddd;
+            border-radius: 50%;
+            &.event {
+                background-color: rgb(0, 177, 255);
+            }
+            &.task {
+                background-color: rgb(252, 175, 23);
+            }
+            &.reminder {
+                background-color: rgb(240, 0, 231);
+            }
+        }
+    }
+}

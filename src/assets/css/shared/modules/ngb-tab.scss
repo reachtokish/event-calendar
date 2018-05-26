@@ -1,0 +1,21 @@
+// ngb tab styling start
+.tab_wrapper {
+    .nav-tabs {
+        border-bottom: solid 1px #C6C6C6;
+        .nav-link {
+            background-color: transparent;
+            border-radius: 0;
+            border: 0;
+            font-size: 15px;
+            color: #939393;
+            border-bottom: solid 3px transparent;
+            padding: 10px 5px;
+            &:hover,
+            &.active {
+                border-bottom-color: #FCAF17;
+                color:#FCAF17;
+            }
+        }
+    }
+}
+// ngb tab styling end

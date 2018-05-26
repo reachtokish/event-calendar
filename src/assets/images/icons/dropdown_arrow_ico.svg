@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4207.433 224.567 10.234 5.766">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="dropdown_arrow_ico" class="cls-1" d="M0,.708C0,.13.4-.234.715.064L3.122,2.243,5.53,4.406a1.017,1.017,0,0,1,0,1.3L3.122,7.89l-2.407,2.2C.4,10.383,0,10.019,0,9.442V.708Z" transform="translate(4217.624 224.567) rotate(90)"/>
+</svg>

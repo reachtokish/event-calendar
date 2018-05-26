@@ -1,0 +1,174 @@
+<div class="tab_wrapper">
+    <tabset [justified]="true">
+        <tab heading="Search Contact">
+            <div class="pt-10px">
+                <form (submit)="searchContact()" class="filter_form" [formGroup]="searchContactForm">
+                    <div class="container">
+                        <div class="row flex-v-center">
+                            <div class="col-md-4 col-md-offset-1">
+                                <mat-radio-group class="example-radio-group" formControlName="contactType" (change)="searchTypeChange()">
+                                    <mat-radio-button class="example-radio-button mr-15px" value="1">Individual</mat-radio-button>
+                                    <mat-radio-button class="example-radio-button" value="2">Organisation</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="searchby_section">
+                                    <mat-form-field class="full-width">
+                                        <input matInput formControlName="searchBy" />
+                                        <mat-placeholder>Search by <strong>Id / First Name / Last name / Mobile number / Email</strong></mat-placeholder>
+                                    </mat-form-field>
+                                    <button type="submit" value="Submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13226 -2587 16.001 16">
+                                          <g id="flaticon1517393448-svg" transform="translate(-13226 -2587)">
+                                            <g id="Group_40638" data-name="Group 40638">
+                                              <g id="Group_40637" data-name="Group 40637">
+                                                <path id="Path_17609" data-name="Path 17609" class="cls-1" d="M11.565,1.984a6.774,6.774,0,1,0-9.58,9.58,6.774,6.774,0,1,0,9.58-9.58ZM6.774,12.256a5.482,5.482,0,1,1,5.482-5.482A5.488,5.488,0,0,1,6.774,12.256Z"/>
+                                              </g>
+                                            </g>
+                                            <g id="Group_40640" data-name="Group 40640" transform="translate(10.459 10.459)">
+                                              <g id="Group_40639" data-name="Group 40639">
+                                                <path id="Path_17610" data-name="Path 17610" class="cls-1" d="M340.027,339.112l-4.249-4.249a.646.646,0,0,0-.914.914l4.249,4.249a.646.646,0,1,0,.914-.914Z" transform="translate(-334.675 -334.674)"/>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="" *ngIf="searchContactForm.controls.contactType.value == 1">
+                <!-- <search-short-individual #individualTable (onSelectContact)="addContactToFranchise($event)"></search-short-individual> -->
+                <div class="table-wrapper">
+                    <table datatable [dtOptions]="dtOptionsIndividual" class="row-border hover">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Mobile Number</th>
+                                <th>Email</th>
+                                <!-- <th>Action</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of individualContacts">
+                                <td>
+                                    <mat-radio-button (click)="chooseContact(i, 'Individual')"></mat-radio-button>
+                                </td>
+                                <td>{{ i.firstName == "" ? "-" : i.firstName }}</td>
+                                <td>{{ i.lastName == "" ? "-" : i.lastName }}</td>
+                                <td>
+                                    <div *ngIf="i.mobileNo != ''">
+                                        <span *ngFor="let mobileNo of i.mobileNo; let index = index">
+                                            {{ i.mobileNo.length == index+1 ? mobileNo.mobileNo : mobileNo.mobileNo + ',' }}
+                                        </span>
+                                    </div>
+                                    <div *ngIf="i.mobileNo == ''">
+                                        <span>-</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div *ngIf="i.email != ''">
+                                        <span *ngFor="let email of i.email; let index = index">
+                                            {{ i.email.length == index+1 ? email.emailId : email.emailId + ',' }}
+                                        </span>
+                                    </div>
+                                    <div *ngIf="i.email == ''">
+                                        <span>-</span>
+                                    </div>
+                                </td>
+                                <!-- <td>
+                                    <a [routerLink]="['/view-contacts/'+i.contactId+'/1']" class="table_icons"><img src="assets/images/list.svg" /></a>
+                                    <a [routerLink]="['/edit-contacts/'+i.contactId+'/1']" class="table_icons"><img src="assets/images/edit_icon.svg" /></a>
+                                    <a href="javascript:void(0);" class="table_icons" (click)="deleteContact(i.contactId)"><img src="assets/images/garbage.svg" /></a>
+                                </td> -->
+                            </tr>
+                            <tr *ngIf="individualContacts?.length == 0">
+                                <td colspan="8" class="no-data-available text-center">No data available in table</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="" *ngIf="searchContactForm.controls.contactType.value == 2">
+                <!-- <search-short-organisation #organisationTable (onSelectContact)="addContactToFranchise($event)"></search-short-organisation> -->
+                <div class="table-wrapper">
+                    <table datatable [dtOptions]="dtOptionsOrganisation" class="row-border hover">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Company Name</th>
+                                <th>Company Type</th>
+                                <th>Mobile Number</th>
+                                <th>Email</th>
+                                <!-- <th>Action</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of organisationContacts">
+                                <td>
+                                    <mat-radio-button (click)="chooseContact(i, 'Organisation')"></mat-radio-button>
+                                </td>
+                                <td>{{ i.companyName == "" ? "-" : i.companyName }}</td>
+                                <td>{{ i.companyType == "" ? "-" : i.companyType }}</td>
+                                <td>
+                                    <div *ngIf="i.mobileNo != ''">
+                                        <span *ngFor="let mobileNo of i.mobileNo; let index = index">
+                                            {{ i.mobileNo.length == index+1 ? mobileNo.mobileNo : mobileNo.mobileNo + ',' }}
+                                        </span>
+                                    </div>
+                                    <div *ngIf="i.mobileNo == ''">
+                                        <span>-</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div *ngIf="i.email != ''">
+                                        <span *ngFor="let email of i.email; let index = index">
+                                            {{ i.email.length == index+1 ? email.emailId : email.emailId + ',' }}
+                                        </span>
+                                    </div>
+                                    <div *ngIf="i.email == ''">
+                                        <span>-</span>
+                                    </div>
+                                </td>
+                                <!-- <td style="width: 12%;">
+                                    <a [routerLink]="['/view-contacts/'+i.orgId+'/2']" class="table_icons"><img src="assets/images/list.svg" /></a>
+                                    <a [routerLink]="['/edit-contacts/'+i.orgId+'/2']" class="table_icons"><img src="assets/images/edit_icon.svg" /></a>
+                                    <a href="javascript:void(0);" class="table_icons" (click)="deleteContact(i.orgId)"><img src="assets/images/garbage.svg" /></a>
+                                </td> -->
+                            </tr>
+                            <tr *ngIf="organisationContacts?.length == 0">
+                                <td colspan="8" class="no-data-available text-center">No data available in table</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="text-center pt-20px" *ngIf="choosedContact != undefined">
+                <button type="button" (click)="addContactToFranchise()" class="site_btn orange_btn">Add Contact</button>
+            </div>
+
+        </tab>
+        <tab heading="Create Contact">
+            <div class="pt-20px">
+                <div class="contactType">
+                    <mat-radio-group [(ngModel)]="contactType" name="contactType">
+                        <mat-radio-button class="mr-20px" value="Individual">Individual</mat-radio-button>
+                        <mat-radio-button class="" value="Organisation">Organisation</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div *ngIf="contactType == 'Individual'">
+                    <create-individual-short-contact (onSelectContact)="creationImport($event)"></create-individual-short-contact>
+                </div>
+                <div *ngIf="contactType == 'Organisation'">
+                    <create-organisation-short-contact (onSelectContact)="creationImport($event)"></create-organisation-short-contact>
+                </div>
+            </div>
+        </tab>
+    </tabset>
+</div>

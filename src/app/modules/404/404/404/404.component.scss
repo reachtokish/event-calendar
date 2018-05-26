@@ -1,0 +1,21 @@
+.notfound_wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 76vh;
+    justify-content: center;
+    h1 {
+        font-size: 100px;
+        font-family: 'rhlight';
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        color: #000;
+        margin: 0;
+        line-height: 100px;
+    }
+    p {
+        font-size: 18px;
+        font-family: 'rhlight';
+        color: #000;
+        margin: 0 0 15px;
+    }
+}

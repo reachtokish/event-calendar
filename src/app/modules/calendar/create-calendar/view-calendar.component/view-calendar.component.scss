@@ -1,0 +1,58 @@
+.add-event-btn{
+    margin-left: auto;
+}
+:host ::ng-deep {
+    .modal{
+        &.add-events-modal{
+        .modal-dialog{
+                width:30% !important;
+            }
+        }
+        &.view-events-modal{
+            .modal-dialog{
+                width: 450px;
+                .modal-body{
+                    text-align: left;
+                    label{
+                        margin-bottom: 0;
+                        color: #B3B3B3;
+                        font-size: 11px;
+                    }
+                    div{
+                        padding: 0.5em;
+                        p{
+                            color: #000000;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.modal{
+    text-align: center;
+    padding: 0!important;
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    &.add-contact-success-modal{
+        .modal-dialog{
+            width:20%;
+            padding: 1em;
+            display: inline-block;
+            vertical-align: middle;
+            p{
+                padding-bottom: 1em;
+                font-size: 18px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+label {
+    margin: 0;
+}

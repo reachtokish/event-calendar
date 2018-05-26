@@ -1,0 +1,21 @@
+<svg id="Group_40860" data-name="Group 40860" xmlns="http://www.w3.org/2000/svg" viewBox="-4120 -6605 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdbcbc;
+      }
+
+      .cls-2 {
+        fill: #f52626;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_183" data-name="Ellipse 183" class="cls-1" cx="21" cy="21" r="21" transform="translate(-4120 -6605)"/>
+  <circle id="Ellipse_184" data-name="Ellipse 184" class="cls-2" cx="15" cy="15" r="15" transform="translate(-4114 -6599)"/>
+  <path id="cancel" class="cls-3" d="M9.084,8l6.69-6.69A.767.767,0,0,0,14.689.224L8,6.914,1.309.225A.767.767,0,1,0,.224,1.31L6.914,8,.225,14.689a.767.767,0,1,0,1.084,1.085L8,9.084l6.69,6.69a.767.767,0,0,0,1.084-1.085Z" transform="translate(-4106.999 -6591.999)"/>
+</svg>

@@ -1,0 +1,59 @@
+:host ::ng-deep {
+    .tree-node {
+        tree-node-expander {
+            .toggle-children-placeholder {
+                width: 24px;
+                height: 26px;
+                background-image: url(../../../../../assets/images/icons/file.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 18px;
+            }
+            .toggle-children-wrapper {
+                .toggle-children {
+                    width: 24px;
+                    height: 26px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 18px;
+                    transform: rotate(0);
+                }
+                &.toggle-children-wrapper-collapsed {
+                    .toggle-children {
+                        background-image: url(../../../../../assets/images/icons/closed_folder.svg);
+                    }
+                }
+                &.toggle-children-wrapper-expanded {
+                    .toggle-children {
+                        background-image: url(../../../../../assets/images/icons/opened_folder.svg);
+                    }
+                }
+            }
+        }
+        .node-content-wrapper {
+            tree-node-content {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        tree-node-checkbox {
+            .tree-node-checkbox {
+                margin-top: 7px;
+            }
+        }
+    }
+    .node-content-wrapper-active,
+    .node-content-wrapper.node-content-wrapper-active:hover,
+    .node-content-wrapper-active.node-content-wrapper-focused {
+        background: #FCAF17;
+    }
+    .node-content-wrapper-active,
+    .node-content-wrapper-focused,
+    .node-content-wrapper:hover {
+        box-shadow: none;
+    }
+    .node-content-wrapper:hover {
+        background: #FCAF17;
+    }
+}

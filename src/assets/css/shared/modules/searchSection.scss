@@ -1,0 +1,40 @@
+:host ::ng-deep {
+    .searchby_section {
+        position: relative;
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 38px;
+            background-color: transparent;
+            border: 0;
+            height: 38px;
+            padding: 9px;
+            cursor: pointer;
+            svg {
+                display: block;
+                path {
+                    fill: #FCAF17;
+                }
+            }
+        }
+    }
+    .filter_by_text {
+        display: inline-block;
+        vertical-align: middle;
+        color: #FCAF17;
+    }
+    .filterby_select {
+        display: inline-block !important;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+    .table_icons {
+        display: inline-block;
+        width: 20px;
+        margin: 0 5px 0 0;
+    }
+    .filter_form {
+        width: 100%;
+    }
+}

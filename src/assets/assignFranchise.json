@@ -1,0 +1,164 @@
+{
+    "assign_franchise": [
+        {
+            "roleId": 3,
+            "roleName": "Regional BSDM",
+            "userprofileId": 4,
+            "userName": "rbsdm@rainehorne.com",
+            "userFName": "Regional BSDM",
+            "userLName": "Regional BSDM",
+            "franchise": [
+                {
+                    "franchiseId": 2,
+                    "franchiseName": "Fr Name",
+                    "registeredName": "Rg Name",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 3,
+                    "franchiseName": "Franchise Name",
+                    "registeredName": "Registered Name",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 4,
+                    "franchiseName": "Techtree IT",
+                    "registeredName": "Techtree IT",
+                    "franchiseBuilding": "Building Name",
+                    "franchiseStreetNo": "Street Number",
+                    "franchiseAddress": "Street Address",
+                    "franchiseCity": "Benagaluru",
+                    "franchiseState": "Karnataka",
+                    "franchiseCountry": "India",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 5,
+                    "franchiseName": "Archtech Design",
+                    "registeredName": "Archtech Design P",
+                    "franchiseBuilding": "Building Name",
+                    "franchiseStreetNo": "Street Number",
+                    "franchiseAddress": "Street Address",
+                    "franchiseCity": "Benagaluru",
+                    "franchiseState": "Karnataka",
+                    "franchiseCountry": "India",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 6,
+                    "franchiseName": "Techtree IT",
+                    "registeredName": "Techtree IT Pvt",
+                    "franchiseBuilding": "Nelson Building",
+                    "franchiseStreetNo": "5024",
+                    "franchiseAddress": "Lalbagh main road",
+                    "franchiseCity": "Benagaluru",
+                    "franchiseState": "Karnataka",
+                    "franchiseCountry": "India",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 7,
+                    "franchiseName": "IBM",
+                    "registeredName": "IBM Ltd",
+                    "franchiseBuilding": "Building",
+                    "franchiseStreetNo": "Street Num",
+                    "franchiseAddress": "Street Address",
+                    "franchiseCity": "Benagaluru",
+                    "franchiseState": "Karnataka",
+                    "franchiseCountry": "India",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 8,
+                    "franchiseName": "sdfsf",
+                    "registeredName": "sdfsfsd",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 9,
+                    "franchiseName": "TBM",
+                    "registeredName": "TBM Ltd",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "rbsdm@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                }
+            ]
+        },
+        {
+            "roleId": 6,
+            "roleName": "Regional Manager",
+            "userprofileId": 3,
+            "userName": "regmanager@rainehorne.com",
+            "userFName": "Regional Manager",
+            "userLName": "Regional Manager",
+            "franchise": [
+                {
+                    "franchiseId": 10,
+                    "franchiseName": "Anugraha",
+                    "registeredName": "Anugraha Pvt",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "regmanager@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                },
+                {
+                    "franchiseId": 14,
+                    "franchiseName": "ff",
+                    "registeredName": "ff",
+                    "franchiseBuilding": "",
+                    "franchiseStreetNo": "",
+                    "franchiseAddress": "",
+                    "franchiseCity": "",
+                    "franchiseState": "",
+                    "franchiseCountry": "",
+                    "assignedTo": "regmanager@rainehorne.com",
+                    "activeStatus": "Online",
+                    "type": "Lead"
+                }
+            ]
+        }
+    ]
+}

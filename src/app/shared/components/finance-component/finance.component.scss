@@ -1,0 +1,92 @@
+.add-payment{
+    .mat-form-field-wrapper{padding-bottom:0px !important;}
+}
+.mat-form-field-infix{
+    border-top: 0 !important;
+}
+.finance_status{
+    ul{
+        &.outer_list{
+            > li{
+                border-left: 1px solid #ddd;
+                padding-top: 0 !important;
+                ul{
+                    >li{
+                        padding-top: 0 !important;
+                    }
+                }
+            }
+            li{
+                padding: 4em 0;
+                &:last-child{
+                    padding-bottom: 0 !important;
+                    ul{
+                        >li{
+                            padding-bottom: 0 !important;
+                        }
+                    }
+                }
+            }
+
+        }
+        &.inline-block{
+            width: 100%;
+            li{
+                display: inline-block;
+                width:25%;
+                padding: 0.5em 0;
+                &:first-child{
+                    width: 10%;
+                }
+                &:last-child{
+                    text-align: right;
+                    width:30%;
+                    .mat-icon-button{
+                        width:auto;
+                        background-color: #fff;
+                        color: #000;
+                        font-size: 14px;
+                        border: 1px solid #FCAF17;
+                        border-radius: 0.25rem;
+                        padding: 5px 15px;
+                    }
+                    .add-payment-btn{
+                        cursor: pointer;
+                        width: 150px;
+                    }
+                    .add-payment-dropdown{
+                        position: absolute;
+                        width: 130px;
+                        border:1px solid #FCAF17;
+                        padding:0.5em;
+                        background: #fff;
+                        border-radius: 5px 0 5px 5px;
+                        right: 47px;
+                        margin-top: -3px;
+                        cursor: pointer;
+                        text-align: left;
+                        li{
+                            width: 100%;
+                            display: block;
+                            text-align: left;
+                            padding: 0.5em 0em !important;
+                        }
+                    }
+                }
+                &.paid{
+                    color:#20D984;
+                }
+                img{
+                    margin-left: -20px;
+                    border-radius: 50%;
+                    // padding: 2px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "lazyload"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "./assets/css/shared/fonts.scss",
+        "./assets/css/styles.scss",
+        "./assets/css/shared/common-styling.scss",
+        "./assets/css/shared/common-classes.scss",
+        "./assets/js/tinymce/js/tinymce/skins/lightgray/skin.min.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css",
+        "../node_modules/datatables.net-dt/css/jquery.dataTables.css",
+        "../node_modules/ng2-tree/styles.css",
+        "../node_modules/angular-calendar/css/angular-calendar.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "./assets/js/jquery-ui.js",
+        "./assets/js/tinymce/js/tinymce/tinymce.js",
+        "./assets/js/tinymce/js/tinymce/themes/modern/theme.min.js",
+
+        "./assets/js/tinymce/js/tinymce/plugins/advlist/plugin.min.js",
+        "./assets/js/tinymce/js/tinymce/plugins/anchor/plugin.min.js",
+        "./assets/js/tinymce/js/tinymce/plugins/autolink/plugin.min.js",
+        "./assets/js/tinymce/js/tinymce/plugins/autoresize/plugin.min.js",
+        "./assets/js/tinymce/js/tinymce/plugins/image/plugin.min.js",
+        "./assets/js/tinymce/js/tinymce/plugins/textcolor/plugin.min.js",
+
+        "../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
+        "../node_modules/datatables.net/js/jquery.dataTables.js",
+
+        "../node_modules/moment/min/moment.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "stylePreprocessorOptions": {
+                "includePaths": [
+                    "assets/css"
+                ]
+            }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
+}

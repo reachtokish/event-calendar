@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11277 7613 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #afafaf;
+      }
+
+      .cls-2 {
+        fill: #afafaf;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="email_ico" transform="translate(9952 7257)">
+    <g id="Ellipse_177" data-name="Ellipse 177" class="cls-1" transform="translate(1325 356)">
+      <circle class="cls-3" cx="19" cy="19" r="19"/>
+      <circle class="cls-4" cx="19" cy="19" r="18.5"/>
+    </g>
+    <g id="flaticon1517548246-svg" transform="translate(1334.507 306.729)">
+      <path id="Path_17648" data-name="Path 17648" class="cls-2" d="M20.2,73.275a2.5,2.5,0,0,1-.324,1.214L13.5,67.354,19.8,61.835a2.506,2.506,0,0,1,.393,1.341v10.1ZM10.1,68.649l8.778-7.68a2.493,2.493,0,0,0-1.2-.318H2.525a2.484,2.484,0,0,0-1.2.318Zm2.447-.465-2.032,1.779a.633.633,0,0,1-.831,0L7.651,68.185,1.193,75.411a2.494,2.494,0,0,0,1.331.388H17.673A2.494,2.494,0,0,0,19,75.411ZM.393,61.835A2.507,2.507,0,0,0,0,63.176v10.1a2.494,2.494,0,0,0,.324,1.214L6.7,67.353Z"/>
+    </g>
+  </g>
+</svg>

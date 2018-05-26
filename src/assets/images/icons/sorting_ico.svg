@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6377.828 518 7.706 10.596">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #fcaf17;
+      }
+    </style>
+  </defs>
+  <g id="sorting_ico" class="cls-1" transform="translate(6323.01 518)">
+    <g id="Group_997" data-name="Group 997" transform="translate(54.818)">
+      <path id="Path_1012" data-name="Path 1012" class="cls-2" d="M55.3,4.335h6.743a.479.479,0,0,0,.339-.82L59.01.143a.473.473,0,0,0-.677,0L54.961,3.514a.482.482,0,0,0,.339.82Z" transform="translate(-54.818)"/>
+      <path id="Path_1013" data-name="Path 1013" class="cls-2" d="M62.042,237.549H55.3a.479.479,0,0,0-.339.82l3.371,3.371a.472.472,0,0,0,.677,0l3.371-3.371a.482.482,0,0,0-.339-.82Z" transform="translate(-54.818 -231.288)"/>
+    </g>
+  </g>
+</svg>

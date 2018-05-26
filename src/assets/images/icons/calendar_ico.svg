@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8351 4538 16.891 16.891">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6c6c6;
+      }
+    </style>
+  </defs>
+  <g id="calendar_ico" transform="translate(8351 4538)">
+    <path id="Path_17598" data-name="Path 17598" class="cls-1" d="M15.483,1.583H13.2V.528a.528.528,0,0,0-1.056,0V1.583H8.973V.528a.528.528,0,0,0-1.056,0V1.583H4.75V.528a.528.528,0,0,0-1.056,0V1.583H1.408A1.407,1.407,0,0,0,0,2.991V15.483a1.408,1.408,0,0,0,1.408,1.408H15.483a1.407,1.407,0,0,0,1.407-1.408V2.991A1.407,1.407,0,0,0,15.483,1.583Zm.352,13.9a.352.352,0,0,1-.352.352H1.408a.352.352,0,0,1-.352-.352V2.991a.352.352,0,0,1,.352-.352H3.695V3.695a.528.528,0,0,0,1.056,0V2.639H7.917V3.695a.528.528,0,0,0,1.056,0V2.639H12.14V3.695a.528.528,0,0,0,1.056,0V2.639h2.288a.352.352,0,0,1,.352.352Z"/>
+    <rect id="Rectangle_2887" data-name="Rectangle 2887" class="cls-1" width="2.111" height="1.583" transform="translate(3.695 6.334)"/>
+    <rect id="Rectangle_2888" data-name="Rectangle 2888" class="cls-1" width="2.111" height="1.583" transform="translate(3.695 8.973)"/>
+    <rect id="Rectangle_2889" data-name="Rectangle 2889" class="cls-1" width="2.111" height="1.583" transform="translate(3.695 11.612)"/>
+    <rect id="Rectangle_2890" data-name="Rectangle 2890" class="cls-1" width="2.111" height="1.583" transform="translate(7.39 11.612)"/>
+    <rect id="Rectangle_2891" data-name="Rectangle 2891" class="cls-1" width="2.111" height="1.583" transform="translate(7.39 8.973)"/>
+    <rect id="Rectangle_2892" data-name="Rectangle 2892" class="cls-1" width="2.111" height="1.583" transform="translate(7.39 6.334)"/>
+    <rect id="Rectangle_2893" data-name="Rectangle 2893" class="cls-1" width="2.111" height="1.583" transform="translate(11.084 11.612)"/>
+    <rect id="Rectangle_2894" data-name="Rectangle 2894" class="cls-1" width="2.111" height="1.583" transform="translate(11.084 8.973)"/>
+    <rect id="Rectangle_2895" data-name="Rectangle 2895" class="cls-1" width="2.111" height="1.583" transform="translate(11.084 6.334)"/>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+:host ::ng-deep {
+    .table-wrapper{
+        font-family: "Arial";
+        .dataTables_length{
+            select{
+                background: #fff;
+                padding: 0.1em 0.5em;
+                border-radius: 5px;
+            }
+        }
+        table{
+            thead{
+                background: #767676;
+                color: #fff;
+
+                th{
+                    border-bottom: 0;
+                }
+            }
+            tbody{
+                tr{
+                    &:nth-child(even){
+                        td{
+                            background-color: whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+        .no-footer{
+            border-bottom: 0;
+        }
+        .dataTables_paginate {
+            .paginate_button{
+                border:1px solid #ddd;
+                padding: 1px;
+                &.current{
+                    background-color: #FCAF17;
+                    &:hover{
+                        background: #FCAF17;
+                        padding: 1px;
+                        border:1px solid $orange-button-color;
+                        color: $orange-button-color;
+                    }
+                }
+                &:hover{
+                    background: #fff;
+                    padding: 1px;
+                    border:1px solid $orange-button-color;
+                    color: $orange-button-color;
+                }
+
+            }
+        }
+    }
+
+    // datatable styling should be moved from here anywhere else
+    .dataTables_length {
+        select {
+            width: 90px;
+            border: solid 1px #CCCCCC;
+            background-color: #fff;
+            height: 35px;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+    }
+    .dataTables_filter {
+        input {
+            border: solid 1px #CCCCCC;
+            height: 35px;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        background: #fff;
+        border: solid 1px #FCAF17;
+        padding: 2px 10px;
+        color: #333;
+        &.disabled {
+            color: #E6E6E6;
+            border: solid 1px #E6E6E6;
+        }
+        &:hover {
+            color: #333;
+        }
+    }
+    .table-wrapper table tbody tr:nth-child(even) td,
+    .table-wrapper table tbody tr td:hover {
+        background-color: #F5F5F5;
+    }
+    // datatable styling should be moved from here anywhere else
+    .table-wrapper table {
+        width: 100%;
+    }
+    .table-wrapper table thead th {
+        padding: 15px 10px;
+    }
+    .table-wrapper table tbody td {
+        color: #606060;
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        color: #333 !important;
+        padding: 2px 10px;
+    }
+    .table-wrapper .dataTables_paginate .paginate_button.current:hover {
+        padding: 2px 10px;
+    }
+    .dataTables_wrapper .dataTables_processing {
+        top: 43px;
+        left: 0;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.6) !important;
+    }
+    .dataTables_empty {
+        display: none;
+    }
+    .no_data_avail {
+        .dataTables_empty {
+            display: table-cell;
+        }
+    }
+}

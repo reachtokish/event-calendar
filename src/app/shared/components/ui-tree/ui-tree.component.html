@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="let item of items; let index = index;" [ngClass]="{'focused': item.children.length > 0, 'noChild':item.children.length <= 0}">
+        <div class="nav_click" (click)="toggleNext($event)"></div>
+        <a href="javascript:void(0);" (click)="editNav($event, item)" class="nav_title">
+            {{ item.name }}
+        </a>
+        <a href="javascript:void(0);" class="delete_nav" (click)="removeNav($event, item)"><img src="assets/images/icons/close_ico.svg" alt=""></a>
+        <!-- {{ item[newKey][index] | json }} -->
+        <ui-tree
+            [key]="key"
+            [data]="item[key]"
+            (remove)="removeSubNav($event, item[newKey][index])"
+            (edit)="editSubNav($event, item[newKey][index])" #uiTree></ui-tree>
+    </li>
+</ul>

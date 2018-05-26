@@ -1,0 +1,77 @@
+// note card list styling start
+.note_card {
+    max-height: 520px;
+    overflow: auto;
+    .note_card_each {
+        background-color: #F8F8F8;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 7px;
+        position: relative;
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0.6;
+            img {
+                display: block;
+                pointer-events: none;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .note_card_title {
+            margin: 0 0 10px;
+            display: flex;
+            .note_author_pic {
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: solid 1px #BFBFBF;
+                font-family: Arial;
+                color: #C3C3C3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                font-size: 18px;
+            }
+            .note_author {
+                overflow: hidden;
+                padding-left: 8px;
+                h4 {
+                    color: #333;
+                    font-size: 16px;
+                    font-family: Arial;
+                    margin: 0 0 3px;
+                }
+                p {
+                    font-size: 9px;
+                    font-family: Arial;
+                    margin: 0;
+                    span {
+                        color: #FCAF17;
+                    }
+                }
+            }
+        }
+        .note_card_description {
+            font-family: Arial;
+            p {
+                color: #4B4B4B;
+                font-size: 13px;
+                line-height: 18px;
+                margin: 0;
+            }
+        }
+    }
+}
+// note card list styling end

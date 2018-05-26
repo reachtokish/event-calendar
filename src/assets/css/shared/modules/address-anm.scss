@@ -1,0 +1,27 @@
+// new address animation start
+.address_expand {
+    .other_addresses {
+        height: 0;
+        overflow: hidden;
+        .anm_top {
+            position: relative;
+            opacity: 0;
+            top: 50px;
+        }
+    }
+    &.address_expand_true {
+        .adress_textarea {
+            display: none !important;
+        }
+        .other_addresses {
+            height: auto;
+            visibility: visible;
+            .anm_top {
+                opacity: 1;
+                top: 0px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+// new address animation end
